@@ -1,5 +1,7 @@
-tasks:
-
+---
+- name: Check Disk Space Usage
+  hosts: all
+  tasks:
   - ansible.builtin.wait_for:
       host: "{{ inventory_hostname }}"
       port: 22

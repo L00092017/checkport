@@ -1,0 +1,6 @@
+tasks:
+
+  - ansible.builtin.wait_for:
+      host: "{{ inventory_hostname }}"
+      port: 22
+    delegate_to: localhost
